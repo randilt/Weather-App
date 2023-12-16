@@ -9,7 +9,16 @@ import windIcon from "../assets/wind.png";
 import clearIcon from "../assets/clear.png";
 
 const WeatherApp = () => {
-  return <div>WeatherApp</div>;
+  return (
+    <div className="container">
+      <div className="top-bar">
+        <input type="text" className="cityInput" placeholder="Search" />
+        <div className="search-icon">
+          <img src={searchIcon} alt="" />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default WeatherApp;
